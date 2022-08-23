@@ -1,0 +1,15 @@
+{
+  "users":[
+    {
+      "id":0,
+      "name":"Mohamed",
+      "email":"Mohamed@gmail.com",
+      "phone":"01234567891",
+      "address":{
+        "street":"9B Harron ",
+        "city":"giza"
+      },
+      "gender":"Male"
+    }
+  ]
+}
