@@ -1,15 +1,48 @@
 {
-  "users":[
+  "users": [
     {
-      "id":0,
-      "name":"Mohamed",
-      "email":"Mohamed@gmail.com",
-      "phone":"01234567891",
-      "address":{
-        "street":"9B Harron ",
-        "city":"giza"
+      "id": 0,
+      "name": "Mohamed",
+      "email": "Mohamed@gmail.com",
+      "phone": "01234567891",
+      "address": {
+        "street": "9B Harron ",
+        "city": "giza"
       },
-      "gender":"Male"
+      "gender": "Male"
+    },
+    {
+      "id": 2,
+      "name": "Ahmed",
+      "email": "Ahmed@gmail.com",
+      "phone": "01234567891",
+      "address": {
+        "street": "6B naser ",
+        "city": "cairo"
+      },
+      "gender": "Male"
+    },
+    {
+      "id": 3,
+      "name": "sf",
+      "email": "sf@gmail.com",
+      "phone": "01234567891",
+      "address": {
+        "street": "6B naser ",
+        "city": "cairo"
+      },
+      "gender": "Male"
+    },
+    {
+      "id": 4,
+      "name": "sf",
+      "email": "sf@gmail.com",
+      "phone": "01234567891",
+      "address": {
+        "street": "6B naser ",
+        "city": "cairo"
+      },
+      "gender": "Male"
     }
   ]
 }

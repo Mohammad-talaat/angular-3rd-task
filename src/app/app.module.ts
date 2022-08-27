@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialUIModule } from './material-ui-module/material-ui.module';
 import { UserModule } from './user-module/user.module';
 import { RouterModule, Routes } from '@angular/router';
+import { SharedModule } from './shared-module/shared.module';
 
 const routes:Routes = [
   {path:'user',loadChildren:()=> import('./user-module/user.module').then(m =>m.UserModule)}
@@ -21,6 +22,7 @@ const routes:Routes = [
     BrowserAnimationsModule,
     MaterialUIModule,
     UserModule,
+    SharedModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
