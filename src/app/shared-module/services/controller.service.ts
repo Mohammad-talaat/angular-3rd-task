@@ -7,11 +7,13 @@ import { UserModel } from '../models/user-model';
 })
 export class ControllerService {
 
+  users!:UserModel[]
   constructor(private http:HttpClient) { }
-  users!:UserModel
 
   getUsers(){
-    return this.http.get<UserModel>('http://localhost:3000/users')
+    return this.http.get<UserModel[]>('http://localhost:3000/users')
   }
 
+
 }
+

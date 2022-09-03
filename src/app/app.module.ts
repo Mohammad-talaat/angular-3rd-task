@@ -7,7 +7,7 @@ import { MaterialUIModule } from './material-ui-module/material-ui.module';
 import { UserModule } from './user-module/user.module';
 import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from './shared-module/shared.module';
-
+import { ReactiveFormsModule } from '@angular/forms';
 const routes:Routes = [
   {path:'user',loadChildren:()=> import('./user-module/user.module').then(m =>m.UserModule)}
 ]
@@ -23,7 +23,8 @@ const routes:Routes = [
     MaterialUIModule,
     UserModule,
     SharedModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
