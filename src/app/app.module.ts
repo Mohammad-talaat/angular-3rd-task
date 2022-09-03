@@ -8,6 +8,8 @@ import { UserModule } from './user-module/user.module';
 import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from './shared-module/shared.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormComponent } from './shared-module/components/form/form.component';
+
 const routes:Routes = [
   {path:'user',loadChildren:()=> import('./user-module/user.module').then(m =>m.UserModule)}
 ]
@@ -15,6 +17,7 @@ const routes:Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+
 
   ],
   imports: [

@@ -1,10 +1,13 @@
 
-import { Component, OnChanges, OnInit, SimpleChanges, ViewChild } from '@angular/core';
+import { Component, Inject, OnChanges, OnInit, SimpleChanges, ViewChild } from '@angular/core';
 import { UserModel } from './shared-module/models/user-model';
 import { ControllerService } from './shared-module/services/controller.service';
 import {MatTableDataSource} from '@angular/material/table'
 import {MatPaginator} from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { DialogTest } from './shared-module/components/dialog/dialog.component';
+
 
 @Component({
   selector: 'app-root',
@@ -12,13 +15,17 @@ import { MatSort } from '@angular/material/sort';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+
   title = 'angular-task-3';
   error:any
+  users!:any
   dataSource!: MatTableDataSource<UserModel>;
 
-  constructor(private userService:ControllerService){}
+  constructor(private userService:ControllerService, public dialog: MatDialog){
 
-  displayedColumns: string[] = ['id', 'name', 'email', 'gender'];
+  }
+
+  displayedColumns: string[] = ['id', 'name', 'email', 'address','gender'];
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
@@ -27,15 +34,27 @@ export class AppComponent implements OnInit {
     }
 
 
+    openDialog(): void {
+      const dialogRef = this.dialog.open(DialogTest, {
+        width: '500px',
+        data: this.users,
+
+      });
+
+      dialogRef.afterClosed().subscribe(result => {
+        console.log('The dialog was closed', result);
+      });
+    }
 
 
 
-  loadUsers(){
-    this.userService.getUsers().subscribe({
-      next: res =>{
-        this.dataSource = new MatTableDataSource<UserModel>(res)
-        this.dataSource.paginator = this.paginator;
-        this.dataSource.sort= this.sort;
+    loadUsers(){
+      this.userService.getUsers().subscribe({
+        next: res =>{
+          this.users = res
+          this.dataSource = new MatTableDataSource<UserModel>(this.users)
+          this.dataSource.paginator = this.paginator;
+          this.dataSource.sort= this.sort;
         },
         error: err => {
           this.error = err.message;
@@ -46,3 +65,4 @@ export class AppComponent implements OnInit {
 
 
 }
+

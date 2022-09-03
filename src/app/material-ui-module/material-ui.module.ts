@@ -7,6 +7,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDialogModule} from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [],
@@ -20,7 +23,10 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatPaginatorModule,
     MatSortModule,
     MatFormFieldModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule,
+    MatSelectModule,
+    MatGridListModule
   ]
 })
 export class MaterialUIModule { }

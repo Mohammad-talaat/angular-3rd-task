@@ -14,6 +14,10 @@ export class ControllerService {
     return this.http.get<UserModel[]>('http://localhost:3000/users')
   }
 
+  createUser(user:UserModel){
+    return this.http.post<UserModel>('http://localhost:3000/users',{user})
+  }
+
 
 }
 
