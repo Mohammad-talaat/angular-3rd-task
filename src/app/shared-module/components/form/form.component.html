@@ -1,39 +1,40 @@
-<h4>Details</h4>
-<mat-form-field appearance="fill">
-  <mat-label>Name</mat-label>
-  <input matInput>
-</mat-form-field>
-
-<mat-form-field appearance="fill">
-  <mat-label>Email</mat-label>
-  <input matInput>
-</mat-form-field>
-
-<mat-form-field appearance="fill">
-  <mat-label>Phone</mat-label>
-  <input matInput>
-</mat-form-field>
-
-<mat-form-field appearance="fill">
-  <mat-label>Select Gender</mat-label>
-  <mat-select>
-    <mat-option *ngFor="let genderOption of genderOptions" [value]="genderOption.value">
-      {{genderOption.viewValue}}
-    </mat-option>
-  </mat-select>
-</mat-form-field>
-
-<div>
-  <h4>Address</h4>
+<form >
+  <h4>Details</h4>
   <mat-form-field appearance="fill">
-        <mat-label>Street</mat-label>
-        <input matInput>
-    </mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput>
+  </mat-form-field>
 
+  <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input matInput>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Phone</mat-label>
+    <input matInput>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Select Gender</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let genderOption of genderOptions" [value]="genderOption.value">
+        {{genderOption.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div>
+    <h4>Address</h4>
     <mat-form-field appearance="fill">
-      <mat-label>City</mat-label>
-      <input matInput>
-    </mat-form-field>
-</div>
+          <mat-label>Street</mat-label>
+          <input matInput>
+      </mat-form-field>
 
+      <mat-form-field appearance="fill">
+        <mat-label>City</mat-label>
+        <input matInput>
+      </mat-form-field>
+  </div>
+</form>
 

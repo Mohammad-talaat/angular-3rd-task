@@ -4,7 +4,7 @@ import { FormComponent } from './components/form/form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialUIModule } from '../material-ui-module/material-ui.module';
 import { DialogTest } from './components/dialog/dialog.component';
-
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,9 @@ import { DialogTest } from './components/dialog/dialog.component';
   imports: [
     CommonModule,
     HttpClientModule,
-    MaterialUIModule
+    MaterialUIModule,
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   exports:[

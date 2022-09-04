@@ -11,7 +11,7 @@
 
   </section> -->
   <div class="mat-elevation-z8">
-    <table  mat-table [dataSource]="dataSource" matSort>
+    <table  mat-table [dataSource]="dataSource" matSort >
 
 
       <!-- Position Column -->
@@ -42,6 +42,15 @@
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Gender </th>
         <td mat-cell *matCellDef="let user"> {{user.gender}} </td>
       </ng-container>
+
+      <ng-container  matColumnDef="action">
+        <th  mat-header-cell *matHeaderCellDef mat-sort-header>Action </th>
+        <td mat-cell *matCellDef="let user">
+          <button class='button-DIY' (click)="openDialog()" mat-raised-button color="primary">Edit</button>
+          <button class='button-DIY' mat-raised-button color="warn">Delete</button>
+        </td>
+      </ng-container>
+
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
