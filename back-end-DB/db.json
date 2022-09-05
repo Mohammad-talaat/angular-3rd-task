@@ -1,147 +1,59 @@
 {
   "users": [
     {
-      "id": 0,
-      "name": "Mohamed",
-      "email": "Mohamed@gmail.com",
-      "phone": "01234567891",
-      "address": {
-        "street": "9B Harron ",
-        "city": "giza"
-      },
-      "gender": "Male"
-    },
-    {
       "name": "Ahmed",
-      "email": "Ahmed@gmail.com",
-      "phone": "10012312312",
+      "email": "Ahemd@gmail.com",
+      "phone": "109240329432",
       "address": {
-        "street": "sdfa",
-        "city": "fd234"
+        "street": "123 B",
+        "city": "Naser"
       },
-      "gender": "male",
+      "gender": "Female",
       "id": 1
     },
     {
-      "name": "Ahmed",
-      "email": "fdg@gfsd",
-      "phone": "fsdg",
+      "name": "zizo",
+      "email": "zizo@gmail.com",
+      "phone": "1091312038",
       "address": {
-        "street": "dsq",
-        "city": null
+        "street": "sdaf",
+        "city": "dsfad"
       },
-      "gender": "male",
+      "gender": "Female",
+      "id": 2
+    },
+    {
+      "name": "zizo",
+      "email": "zizo@gmail.com",
+      "phone": "1091312038",
+      "address": {
+        "street": "sdaf",
+        "city": "dsfad"
+      },
+      "gender": "Male",
       "id": 3
     },
     {
-      "name": "dfa",
-      "email": "fdsfd@gasfd",
-      "phone": "dfadf",
+      "name": null,
+      "email": null,
+      "phone": null,
       "address": {
-        "street": "44 doki",
-        "city": "giza"
+        "street": null,
+        "city": null
       },
-      "gender": "male",
+      "gender": null,
       "id": 4
     },
     {
-      "name": "loay ",
-      "email": "laoy@gmail.com",
-      "phone": "0293u102931",
+      "name": "dfadf",
+      "email": "adf@dsfad",
+      "phone": "dafadf",
       "address": {
-        "street": "435 ",
-        "city": "naser"
-      },
-      "gender": "male",
-      "id": 5
-    },
-    {
-      "name": null,
-      "email": null,
-      "phone": null,
-      "address": {
-        "street": null,
-        "city": null
-      },
-      "gender": null,
-      "id": 6
-    },
-    {
-      "name": "dfa",
-      "email": "sdsf@gs",
-      "phone": "3424",
-      "address": {
-        "street": "sdfa",
-        "city": "dfadsf"
-      },
-      "gender": "female",
-      "id": 7
-    },
-    {
-      "name": null,
-      "email": null,
-      "phone": null,
-      "address": {
-        "street": null,
-        "city": null
-      },
-      "gender": null,
-      "id": 8
-    },
-    {
-      "name": "dafda",
-      "email": "dfadf@fds",
-      "phone": "dfasf",
-      "address": {
-        "street": "dafa",
-        "city": "afd"
-      },
-      "gender": "female",
-      "id": 9
-    },
-    {
-      "name": "22",
-      "email": "fdaf@dsf",
-      "phone": "dafdfa",
-      "address": {
-        "street": "dfsa",
+        "street": "adfadf",
         "city": "dfad"
       },
-      "gender": "female",
-      "id": 10
-    },
-    {
-      "name": null,
-      "email": null,
-      "phone": null,
-      "address": {
-        "street": null,
-        "city": null
-      },
-      "gender": null,
-      "id": 11
-    },
-    {
-      "name": "new ",
-      "email": "snew@gnew",
-      "phone": "132940234",
-      "address": {
-        "street": "sldf",
-        "city": "sdfa"
-      },
-      "gender": "male",
-      "id": 12
-    },
-    {
-      "name": null,
-      "email": null,
-      "phone": null,
-      "address": {
-        "street": null,
-        "city": null
-      },
-      "gender": null,
-      "id": 13
+      "gender": "Female",
+      "id": 5
     }
   ]
 }

@@ -1,4 +1,4 @@
-<h2 mat-dialog-title>{{this.data[0]}}</h2>
+<h2 mat-dialog-title>{{this.data ? "Edit User":"Create a new user"}}</h2>
 <div mat-dialog-content>
   <app-form [dialogReference]="dialogRef"></app-form>
 </div>

@@ -36,7 +36,6 @@ export class AppComponent implements OnInit {
     openDialog(): void {
       let dialogRef = this.dialog.open(DialogTest, {
         width: '500px',
-        data:['Create a new user']
       });
       dialogRef.afterClosed().subscribe(result => {
         console.log('The dialog was closed', result);
@@ -51,6 +50,10 @@ export class AppComponent implements OnInit {
         })
         dialogRef.afterOpened().subscribe(()=>{
           console.log('the edit dialog has been opened')
+        })
+        dialogRef.afterClosed().subscribe(()=>{
+          console.log('Edit dialog has been closed')
+          this.loadUsers()
         })
     }
 

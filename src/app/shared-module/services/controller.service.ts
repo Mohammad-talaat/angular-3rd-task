@@ -18,6 +18,10 @@ export class ControllerService {
     return this.http.post<UserModel>('http://localhost:3000/users',user)
   }
 
+  editUser(user:UserModel,id:number | undefined){
+    return this.http.put<UserModel>(`http://localhost:3000/users/${id}`,user)
+  }
+
 
 }
 
