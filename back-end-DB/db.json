@@ -12,92 +12,136 @@
       "gender": "Male"
     },
     {
-      "id": 2,
       "name": "Ahmed",
       "email": "Ahmed@gmail.com",
-      "phone": "01234567891",
+      "phone": "10012312312",
       "address": {
-        "street": "6B naser ",
-        "city": "cairo"
+        "street": "sdfa",
+        "city": "fd234"
       },
-      "gender": "Male"
+      "gender": "male",
+      "id": 1
     },
     {
-      "id": 3,
-      "name": "sf",
-      "email": "sf@gmail.com",
-      "phone": "01234567891",
+      "name": "Ahmed",
+      "email": "fdg@gfsd",
+      "phone": "fsdg",
       "address": {
-        "street": "6B naser ",
-        "city": "cairo"
+        "street": "dsq",
+        "city": null
       },
-      "gender": "Male"
+      "gender": "male",
+      "id": 3
     },
     {
-      "id": 4,
-      "name": "sf",
-      "email": "sf@gmail.com",
-      "phone": "01234567891",
+      "name": "dfa",
+      "email": "fdsfd@gasfd",
+      "phone": "dfadf",
       "address": {
-        "street": "6B naser ",
-        "city": "cairo"
+        "street": "44 doki",
+        "city": "giza"
       },
-      "gender": "Male"
+      "gender": "male",
+      "id": 4
     },
     {
-      "id": 5,
-      "name": "sf",
-      "email": "sf@gmail.com",
-      "phone": "01234567891",
+      "name": "loay ",
+      "email": "laoy@gmail.com",
+      "phone": "0293u102931",
       "address": {
-        "street": "6B naser ",
-        "city": "cairo"
+        "street": "435 ",
+        "city": "naser"
       },
-      "gender": "Male"
+      "gender": "male",
+      "id": 5
     },
     {
-      "id": 6,
-      "name": "sf",
-      "email": "sf@gmail.com",
-      "phone": "01234567891",
+      "name": null,
+      "email": null,
+      "phone": null,
       "address": {
-        "street": "6B naser ",
-        "city": "cairo"
+        "street": null,
+        "city": null
       },
-      "gender": "Male"
+      "gender": null,
+      "id": 6
     },
     {
-      "id": 7,
-      "name": "sf",
-      "email": "sf@gmail.com",
-      "phone": "01234567891",
+      "name": "dfa",
+      "email": "sdsf@gs",
+      "phone": "3424",
       "address": {
-        "street": "6B naser ",
-        "city": "cairo"
+        "street": "sdfa",
+        "city": "dfadsf"
       },
-      "gender": "Male"
+      "gender": "female",
+      "id": 7
     },
     {
-      "id": 8,
-      "name": "sf",
-      "email": "sf@gmail.com",
-      "phone": "01234567891",
+      "name": null,
+      "email": null,
+      "phone": null,
       "address": {
-        "street": "6B naser ",
-        "city": "cairo"
+        "street": null,
+        "city": null
       },
-      "gender": "Male"
+      "gender": null,
+      "id": 8
     },
     {
-      "id": 9,
-      "name": "sf",
-      "email": "sf@gmail.com",
-      "phone": "01234567891",
+      "name": "dafda",
+      "email": "dfadf@fds",
+      "phone": "dfasf",
       "address": {
-        "street": "6B naser ",
-        "city": "cairo"
+        "street": "dafa",
+        "city": "afd"
       },
-      "gender": "Male"
+      "gender": "female",
+      "id": 9
+    },
+    {
+      "name": "22",
+      "email": "fdaf@dsf",
+      "phone": "dafdfa",
+      "address": {
+        "street": "dfsa",
+        "city": "dfad"
+      },
+      "gender": "female",
+      "id": 10
+    },
+    {
+      "name": null,
+      "email": null,
+      "phone": null,
+      "address": {
+        "street": null,
+        "city": null
+      },
+      "gender": null,
+      "id": 11
+    },
+    {
+      "name": "new ",
+      "email": "snew@gnew",
+      "phone": "132940234",
+      "address": {
+        "street": "sldf",
+        "city": "sdfa"
+      },
+      "gender": "male",
+      "id": 12
+    },
+    {
+      "name": null,
+      "email": null,
+      "phone": null,
+      "address": {
+        "street": null,
+        "city": null
+      },
+      "gender": null,
+      "id": 13
     }
   ]
 }

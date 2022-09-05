@@ -1,9 +1,5 @@
-<h2 mat-dialog-title>Create a new user</h2>
+<h2 mat-dialog-title>{{this.data[0]}}</h2>
 <div mat-dialog-content>
-  <app-form></app-form>
-  <!-- {{data[0].name}} -->
-  <!-- the line above is the data coming from users array in the app component -->
+  <app-form [dialogReference]="dialogRef"></app-form>
 </div>
-<div mat-dialog-actions>
-  <button mat-button (click)="closeDialog()">Save</button>
-</div>
+<div mat-dialog-actions></div>

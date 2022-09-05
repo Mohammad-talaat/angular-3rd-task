@@ -1,5 +1,5 @@
 export interface UserModel {
-  id:number;
+  id?:number;
   name:string;
   email:string;
   phone:string;
@@ -8,5 +8,5 @@ export interface UserModel {
     city:string,
   },
   gender:string
-    
+
 }

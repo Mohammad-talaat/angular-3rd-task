@@ -33,20 +33,26 @@ export class AppComponent implements OnInit {
       this.loadUsers()
     }
 
-
     openDialog(): void {
-      const dialogRef = this.dialog.open(DialogTest, {
+      let dialogRef = this.dialog.open(DialogTest, {
         width: '500px',
-        data: this.users,
-
+        data:['Create a new user']
       });
-
       dialogRef.afterClosed().subscribe(result => {
         console.log('The dialog was closed', result);
+        this.loadUsers()
       });
     }
 
-
+    editDialog(user:any){
+      let dialogRef = this.dialog.open(DialogTest,{
+          width:'500px',
+          data:['Edit User',user]
+        })
+        dialogRef.afterOpened().subscribe(()=>{
+          console.log('the edit dialog has been opened')
+        })
+    }
 
     loadUsers(){
       this.userService.getUsers().subscribe({

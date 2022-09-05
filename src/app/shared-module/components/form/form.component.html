@@ -24,8 +24,8 @@
     </mat-select>
   </mat-form-field>
 
-  <h4>Address</h4>
   <div formGroupName="address">
+    <h4>Address</h4>
     <mat-form-field  appearance="fill">
           <mat-label>Street</mat-label>
           <input matInput formControlName="street">
@@ -37,6 +37,6 @@
       </mat-form-field>
   </div>
 
-  <button >Submit</button>
+  <button mat-button (submit)="onFormSubmit" >Submit</button>
 </form>
 
