@@ -7,6 +7,7 @@ import {MatPaginator} from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { DialogTest } from './shared-module/components/dialog/dialog.component';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 
 @Component({
@@ -21,10 +22,12 @@ export class AppComponent implements OnInit {
   users!:any
   dataSource!: MatTableDataSource<UserModel>;
 
-  constructor(private userService:ControllerService, public dialog: MatDialog){
+  constructor(private userService:ControllerService, public dialog: MatDialog,private _snackBar: MatSnackBar){
 
   }
-
+  openSnackBar(message: string, action: string) {
+    this._snackBar.open(message, action,{duration: 1500});
+  }
   displayedColumns: string[] = ['id', 'name', 'email', 'address','phone','gender','action'];
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
@@ -77,6 +80,7 @@ export class AppComponent implements OnInit {
         next:res=>{
           console.log("this is the delete button pressed",res)
           this.loadUsers()
+          this.openSnackBar('User has been deleted successfully','Close')
         },
         error:err=>{
           console.log('failed to delete the user' + err)

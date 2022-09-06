@@ -1,3 +1,15 @@
 {
-  "users": []
+  "users": [
+    {
+      "name": "Mohamed",
+      "email": "Mohamad@gmail.com",
+      "phone": "0123456789",
+      "address": {
+        "street": "13 B",
+        "city": "Naser"
+      },
+      "gender": "Male",
+      "id": 1
+    }
+  ]
 }
