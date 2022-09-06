@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
 
   }
 
-  displayedColumns: string[] = ['id', 'name', 'email', 'address','gender','action'];
+  displayedColumns: string[] = ['id', 'name', 'email', 'address','phone','gender','action'];
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
@@ -68,6 +68,18 @@ export class AppComponent implements OnInit {
         error: err => {
           this.error = err.message;
           console.error('There was an error!', err);
+        }
+      })
+    }
+
+    deleteUser(id:number|undefined){
+      this.userService.deleteUser(id).subscribe({
+        next:res=>{
+          console.log("this is the delete button pressed",res)
+          this.loadUsers()
+        },
+        error:err=>{
+          console.log('failed to delete the user' + err)
         }
       })
     }

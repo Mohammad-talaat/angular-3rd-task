@@ -22,6 +22,10 @@ export class ControllerService {
     return this.http.put<UserModel>(`http://localhost:3000/users/${id}`,user)
   }
 
+  deleteUser(id:number | undefined){
+    return this.http.delete<UserModel>(`http://localhost:3000/users/${id}`)
+  }
+
 
 }
 
